@@ -4,6 +4,11 @@ body {
   font-weight: 500;
 }
 
+/*Alteração do sroll*/
+section[id] {
+    scroll-margin-top: 90px;
+}
+
 img{
     height:3rem;
 }
@@ -12,6 +17,7 @@ img{
   overflow: hidden;
   background-color: #042A5B;
   padding: 1vh;
+ 
   
 }
 

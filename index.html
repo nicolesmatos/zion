@@ -1,8 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <!--Link para importação das fontes do google _instrument sans e inter-->
@@ -24,6 +27,11 @@
   <!-- Link para o arquivo JavaScript da barra de navegaçãp -->
   <script src="js/nav.js" defer></script>
 
+  <!--Arquivo JS para o scroll-->
+  <script src="js/scroll.js" defer></script>
+
+  <title>ZION serviços</title>
+
 </head>
 
 <body>
@@ -31,9 +39,9 @@
   <!--Barra de navegação - Início-->
   <div class="topnav" id="myTopnav">
     <a href="#home"><img src="img/SVG/Prancheta 1.svg"></a>
-    <a class="link-nav" href="#">Serviços</a>
-    <a class="link-nav" href="#">Conheça a ZION</a>
-    <a class="link-nav" href="#">Contato</a>
+    <a class="link-nav" href="#servicos">Serviços</a>
+    <a class="link-nav" href="#empresa">Conheça a ZION</a>
+    <a class="link-nav" href="#contato">Contato</a>
 
     <a href="javascript:void(0);" class="icon" onclick="myFunction()">
       <i class="fa fa-bars"></i>
@@ -44,7 +52,7 @@
 
 
   <!--SECTION para introduzir o conteúdo zion-->
-  <section class="geral-section">
+  <section class="geral-section" id="home">
 
     <!--Blocos coloridos circulares do topo da página-->
     <div class="block-color-geral ">
@@ -73,7 +81,8 @@
 
       <div class="vaii">
         <!--<button>Conheça nossos serviços</button>-->
-        <button class="solicitar">Solicitar um serviço</button>
+        <button class="solicitar" onclick="window.open('https://wa.me/5511914394211?text=' + encodeURIComponent('Boa tarde! Gostaria de uma visita técnica da ZION!'), '_blank')">
+    Solicitar um serviço</button>
       </div>
 
     </div>
@@ -170,7 +179,7 @@
   </section>
 
 
-  <section class="empresa-geral">
+  <section class="empresa-geral" id="empresa">
     <h1 class="title-padrao">CONHEÇA A ZION SERVIÇOS</h1>
 
     <div class="bloco-logo">
@@ -190,7 +199,7 @@
 
   </section>
 
-  <section class="descricao-serv-geral">
+  <section class="descricao-serv-geral" id="servicos">
     <h1 class="title-padrao">
       SERVIÇOS ZION
     </h1>
@@ -258,17 +267,34 @@
   </div>
 
 
-  <section class="geral-contato">
+  <section class="geral-contato" id="contato">
     <h1 class="title-padrao">ENTRE EM CONTATO AGORA MESMO!</h1>
 
 
 
-    <div class="contato-externo">
-      <div class="contato whats">Whatsapp</div>
-      <div class="contato email">E-mail</div>
-      <div class=" contato numero">(11) 94680-3640</div>
-      
-    </div>
+    
+<div class="contato-externo">
+
+  <!-- WhatsApp -->
+  <div class="contato whats"
+    onclick="window.open('https://wa.me/5511914394211?text=' + encodeURIComponent('Boa tarde! Gostaria de uma visita técnica da ZION!'), '_blank')">
+    Whatsapp
+  </div>
+
+  <!-- E-mail -->
+  <div class="contato email"
+    onclick="window.location.href='mailto:zionservicos26@gmail.com?subject=' + encodeURIComponent('Solicitação de visita técnica') + '&body=' + encodeURIComponent('Boa tarde! Gostaria de uma visita técnica da ZION!')">
+    E-mail
+  </div>
+
+  <!-- Telefone -->
+  <div class="contato numero"
+    onclick="window.location.href='tel:+5511914394211'">
+    (11) 91439-4211
+  </div>
+
+</div>
+
     
   </section>
 
@@ -305,10 +331,10 @@
       <div class="footer-col">
         <h4>Contato</h4>
         <ul class="info-contato">
-          <li><strong>WhatsApp:</strong> (11) 99999-9999</li>
-          <li><strong>E-mail:</strong> contato@zionservicos.com.br</li>
+          <li><strong>WhatsApp:</strong> (11) 91439-4211</li>
+          <li><strong>E-mail:</strong> zionservicos26@gmail.com</li>
           <li><strong>Atendimento:</strong> Seg a Sex, 08h às 18h</li>
-          <li><strong>Região:</strong> São Paulo e Grande SP</li>
+          <li><strong>Endereço:</strong> Alameda Rio Negro; nº 503; sala 2020; Alphaville - Barueri SP</li>
         </ul>
       </div>
 
