@@ -1,0 +1,124 @@
+
+/* breakpoints */
+
+@media (min-width:760px) 
+
+    
+
+@media(min-width: 1024px) 
+    
+
+
+
+@media(min-height:760px)
+
+
+
+.geral-section {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+
+    .direita {
+        flex: 2;
+    }
+
+    .esquerda {
+        flex: 1.5;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .block-text button {
+        width: 100%;
+        margin-top: 5%;
+    }
+
+    .block-azul-claro {
+    margin: 10% 6% 0%;
+   width: 60%;
+
+
+}
+
+.block-laranja {
+
+    
+    margin: -10% 15% 0% 0%;
+    width: 80%;
+    height: 10vh;
+
+
+}
+
+.block-azul-escuro {
+    margin: -15% 20% 10% 1%;
+    width: 85%;*/
+
+
+}
+
+
+}
+
+    
+
+@media(min-width: 1024px) {
+
+}
+    
+
+
+
+@media(min-height:760px){
+
+}
+       
+
+
+.contato-externo{
+    display: flex;
+
+
+}
+.contato {
+    width: 70%;
+    height: 5rem;
+    font-size: 2rem;
+    text-align: center;
+    justify-content: center;
+}
+
+.contato-externo {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+}
+
+.geral-contato{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    text-align: center;
+        margin-left: 5rem;
+}
+
+.whats{
+    background-color: #3ABF33;
+    color: #fff;
+}
+
+.email{
+    background-color: #ff0000;
+    color: #fff;
+
+}
+.numero{
+    background-color: #F5F5F5;
+    color: #FF9226;
+    
+}
+

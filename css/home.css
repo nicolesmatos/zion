@@ -1,0 +1,673 @@
+/*Container geral de boas-vindas*/
+.geral-section {
+    background-color: #F5F5F5;
+    height: 100vh;
+}
+
+/*Cartões sobrepostos*/
+.block-color-geral {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+    font-family: 'inter' sans-serif;
+    color: #fff;
+    justify-items: right;
+    text-align: left;
+
+
+}
+
+.block-color-geral p {
+    padding: 1rem;
+    font-size: 1.08rem;
+}
+
+.block-azul-claro {
+
+    background-color: #104285;
+    z-index: 1;
+    border-radius: 1rem;
+    margin: 4rem 1rem 0rem 0rem;
+    min-width: 60%;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.3);
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+
+}
+
+.block-laranja {
+
+    background-color: #FF9226;
+    z-index: 2;
+    border-radius: 1rem;
+    margin: -1rem 3rem 0rem 0rem;
+    min-width: 65%;
+    /*height: 12vh;*/
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.3);
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+
+}
+
+.block-azul-escuro {
+    background-color: #042A5B;
+    z-index: 3;
+    border-radius: 1rem;
+    margin: -1rem 5rem 4rem 5rem;
+    min-width: 70%;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.3);
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+
+}
+
+/*Bloco texto de boas vindas abaixo dos cartões sobrepostos*/
+.block-text {
+
+    margin: 5%;
+    padding-bottom: 15%;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+
+}
+
+.block-text h1 {
+    color: #042A5B;
+}
+
+.block-text h2 {
+    color: #FF9226;
+}
+
+.solicitar {
+    margin-top: 5%;
+    height: 2.5rem;
+    width: 50%;
+    background-color: #3ABF33;
+    color: #ffff;
+    border-radius: 0.5rem;
+    border: none;
+    cursor: pointer;
+    font-size: 1.09rem;
+}
+
+.solicitar:hover {
+    border: 2px solid #3ABF33;
+    background-color: #fff;
+    color: #3ABF33;
+}
+
+/*Hover customizado para a animação dos cartões*/
+.block-azul-claro:hover,
+.block-laranja:hover,
+.block-azul-escuro:hover {
+    animation: subir 0.5s ease;
+}
+
+/*bLOCO DE ROLAGEM AUTOMÁTICO*/
+
+/*Todos os títulos da página seguem essa configuração*/
+.title-padrao {
+    text-align: center;
+    font-size: 1.6rem;
+    color: #042A5B;
+    margin: 5rem 2rem 5rem;
+    font-weight: 700;
+    font-family: 'Inter', sans-serif;
+}
+
+/*Estilização das imagens do carrossel- mobile*/
+.img-correceu {
+    width: 80%;
+    height: 100%;
+    cursor: pointer;
+    border-radius: 2rem;
+    object-fit: cover;
+    /*Imagem obdecer a proporção, sem distorcer*/
+
+}
+
+.swiper-wrapper {
+    transition-timing-function: linear !important;
+}
+
+/*Estilização dos blocos de benefícios*/
+.geral-beneficios h1 {
+    color: #fff;
+}
+
+.geral-beneficios {
+    background-color: #042A5B;
+    margin-top: 5rem;
+    padding: 1rem;
+
+}
+
+.beneficios {
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    color: #fff;
+    justify-content: center;
+    padding-bottom: 5rem;
+}
+
+
+
+.bene {
+    background-color: #104285;
+    margin: 1rem;
+    padding: 1.5rem;
+    width: 15rem;
+    font-size: 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.3);
+    justify-content: center;
+    text-align: center;
+
+}
+
+.bene:hover {
+    animation: subir 0.5s ease;
+}
+
+
+/*Tela de seção de agendamento*/
+.agenda{
+    display: flex;
+    justify-content: center;
+}
+.img-agenda {
+    height: 100%;
+    width: 20rem;
+    text-align: center;
+    margin-bottom: 1.8rem;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 1rem;
+}
+
+.agenda-texto {
+    flex-direction: column;
+    margin: 2.5rem;
+    font-size: 1.17rem;
+    text-align: justify;
+}
+
+.title-agenda{
+    color:#FF9226;
+}
+
+/*Bloco conheça a zion serviços*/
+.empresa-geral{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.3), 0.5px 4px 10px rgba(0, 0, 0, 0.0);
+}
+
+.bloco-img-logo {
+    background-color: #042A5B;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.bloco-img-logo img{
+    margin-bottom: 0;
+    border: 1px solid #104285;
+    
+}
+
+.container-empresa-text{
+    
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+     margin: 2.5rem
+
+}
+
+.empresa-text{
+    /*margin: 2.5rem;*/
+    font-size: 1.17rem;
+    text-align: justify;
+}
+
+/*Descritivo expansivo dos serviços*/
+.descricao-serv-geral h2{
+    text-align: center;
+    color: #808080;
+}
+
+.serv{
+    background-color: #E6E6E6;
+    color:#042A5B;
+    cursor: pointer;
+}
+
+/*MODAIS*/
+/* Efeito de cursor de clique nos blocos */
+
+/* --- ESTILOS DO MODAL --- */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(15, 23, 42, 0.6); /* Fundo escuro */
+  backdrop-filter: blur(4px);          /* Efeito desfocado de fundo */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  z-index: 1000;
+}
+
+/* Quando o JS adiciona a classe .active, o modal aparece */
+.modal-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal-container {
+  background: #ffffff;
+  width: 70%;
+  max-width: 500px;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2);
+  position: relative;
+  transform: scale(0.9);
+  transition: transform 0.3s ease;
+}
+
+.modal-overlay.active .modal-container {
+  transform: scale(1);
+}
+
+/* Botão de Fechar (X) */
+.modal-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: #f1f5f9;
+  border: none;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  color: #64748b;
+  cursor: pointer;
+}
+
+.modal-close:hover {
+  background: #e2e8f0;
+  color: #0f172a;
+}
+
+/* Título no Modal */
+.modal-title {
+  font-size: 1.4rem;
+  color: #0f172a;
+  margin-bottom: 1rem;
+}
+
+/* Estilo da Lista Não Ordenada */
+.modal-list {
+  padding-left: 1.2rem;
+  color: #334155;
+  line-height: 1.8;
+}
+
+.modal-list li {
+  margin-bottom: 0.5rem;
+}
+
+.geral-contato{
+    background-color: #e2e8f0;
+    padding: 1rem;
+    padding-bottom: 4rem;
+}
+
+
+.contato-externo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+}
+
+
+.contato {
+    width: 50%;
+    text-align: center;
+    align-items: center;
+    padding: 2rem;
+    border-radius: 1rem;
+    margin: 0.5rem;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.3);
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+
+
+.whats{
+    background-color: #3ABF33;
+    color: #fff;
+}
+
+.email{
+    background-color: #ff0000;
+    color: #fff;
+
+}
+.numero{
+    width: 70%;
+    text-align: center;
+    align-items: center;
+    padding: 2rem;
+    border-radius: 1rem;
+    margin: 0.5rem;
+    background-color: #F5F5F5;
+    color: #FF9226;
+    margin-top: 1.6rem;
+    
+    
+}
+
+
+
+/*Barra*/
+/* --- FOOTER ZION --- */
+.footer-site {
+  background-color: #042A5B; /* Azul escuro principal */
+  color: #ffffff;
+  padding: 3rem 1.5rem 1.5rem 1.5rem;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+/* LADO ESQUERDO */
+.footer-left {
+  flex: 1;
+  min-width: 260px;
+  max-width: 380px;
+}
+
+.footer-logo {
+  max-width: 160px; /* Ajuste a largura da logo conforme necessário */
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.footer-sobre {
+  color: #cbd5e1;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.footer-copy-desktop {
+  font-size: 0.85rem;
+  color: #94a3b8;
+}
+
+/* LADO DIREITO */
+.footer-right {
+  flex: 2;
+  display: flex;
+  justify-content: space-around;
+  gap: 2rem;
+  flex-wrap: wrap;
+  min-width: 280px;
+}
+
+.footer-col h4 {
+  color: #FF9226; /* Laranja de destaque */
+  font-size: 1.1rem;
+  margin-bottom: 1.2rem;
+  position: relative;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 0.6rem;
+  font-size: 0.95rem;
+  color: #e2e8f0;
+}
+
+.footer-col ul li a {
+  color: #e2e8f0;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer-col ul li a:hover {
+  color: #FF9226; /* Destaque ao passar o mouse */
+}
+
+.info-contato li strong {
+  color: #ffffff;
+}
+
+.footer-bottom-mobile {
+  display: none;
+  text-align: center;
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  font-size: 0.85rem;
+  color: #94a3b8;
+}
+
+/* RESPONSIVIDADE (Telas de Celular) */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .footer-right {
+    justify-content: flex-start;
+    width: 100%;
+  }
+
+  .footer-copy-desktop {
+    display: none;
+  }
+
+  .footer-bottom-mobile {
+    display: block;
+  }
+}
+
+
+
+
+/* breakpoints */
+
+@media(min-width:680px) {
+
+    .block-text {
+        text-align: center;
+
+    }
+
+    .block-text h1 {
+        font-size: 2.5rem;
+    }
+    /*Tela de seção de agendamento*/
+
+.img-agenda {
+    width: 25rem;
+
+}
+/*
+.agenda-texto {
+    margin: 2.5rem;
+    font-size: 1.17rem;
+    text-align: justify;
+}*/
+
+
+
+
+}
+
+@media (min-width:760px) {
+    .geral-section {
+        display: flex;
+        flex-direction: row-reverse;
+        padding-right: 1rem;
+        height: 100%;
+
+    }
+
+    .block-text {
+        min-height: 2rem;
+        display: grid;
+        grid-template-rows: auto auto;
+        text-align: left;
+
+    }
+
+    button {
+        width: 100%;
+    }
+
+    .block-color-geral {
+        width: 50%;
+        margin-right: 2rem;
+
+    }
+
+    .agenda-texto{
+        font-size: 1.19rem;
+    }
+
+    .container-empresa-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.empresa-text {
+    margin: 2.5rem;
+    
+}
+
+.bloco-img-logo {
+    
+    padding: 2rem;
+    
+}
+
+.modal-container {
+
+  width: 100%;
+
+}
+
+/*Contatos*/
+
+
+
+
+}
+
+@media(min-width: 1024px) {
+
+
+    .block-text h1 {
+        font-size: 2.59rem;
+    }
+
+    .block-color-geral p {
+        font-size: 1.5rem;
+    }
+
+    button {
+        font-size: 1.5rem;
+    }
+        .container-flex-agenda {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 5rem;
+        gap: 3rem;
+    }
+
+    .agenda {
+    flex: 1;
+    /*margin: 3rem;*/
+    justify-content: center;
+  
+}
+
+.img-agenda {
+    height: 100%;
+    width: 25.6rem;
+    text-align: center;
+    margin-bottom: 1.8rem;
+}
+
+.agenda-texto{
+    font-size: 1.15rem;
+    text-align: justify;
+}
+
+.contato-externo {
+    display: flex;
+    flex-direction: row;
+    margin: 5rem;
+
+}
+
+.numero{
+    margin: 0.5rem;
+}
+
+
+}
+
+
+
+/*Animação dos cartões*/
+
+@keyframes subir {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-5px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
